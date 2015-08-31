@@ -20,6 +20,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     MBFDog *myDog = [[MBFDog alloc] init];
+    myDog.name = @"Hoss";
     
 }
 

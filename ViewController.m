@@ -21,6 +21,10 @@
     // Do any additional setup after loading the view, typically from a nib.
     MBFDog *myDog = [[MBFDog alloc] init];
     myDog.name = @"Hoss";
+    myDog.age = 5;
+    myDog.color = @"yellow";
+    myDog.breed = @"Labrador Retriever";
+    NSLog(@"My dog's name is %@, he is a %@ %@, and he is %i years old", myDog.name, myDog.color, myDog.breed, myDog.age);
     
 }
 

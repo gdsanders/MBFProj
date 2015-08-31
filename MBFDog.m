@@ -12,7 +12,7 @@
 @implementation MBFDog
 
 - (void) bark {
-    NSLog(@"Bark bark bark");
+    NSLog(@"Woof woof woof");
 }
 
 @end

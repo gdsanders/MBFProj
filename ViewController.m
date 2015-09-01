@@ -21,15 +21,14 @@
     // Do any additional setup after loading the view, typically from a nib.
     MBFDog *myDog = [[MBFDog alloc] init];
     myDog.name = @"Hoss";
-    myDog.age = 5;
+    myDog.age = 7;
     myDog.color = @"yellow";
     myDog.breed = @"Labrador Retriever";
-    [myDog barkANumberOfTimes:5 loudly:YES];
+    [myDog barkANumberOfTimes:5 loudly:NO];
      NSLog(@"%@", myDog.color);
     [myDog changeColor];
     NSLog(@"%@", myDog.color);
-    int DogYears = [myDog ageInDogYearsFromAge:myDog.age];
-    NSLog(@"%i", DogYears);
+    NSLog(@"%i", [myDog ageInDogYearsFromAge:myDog.age]);
 }
 
 - (void)didReceiveMemoryWarning {

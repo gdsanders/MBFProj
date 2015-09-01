@@ -15,13 +15,20 @@
     NSLog(@"Woof woof woof");
 }
 
-- (void) barkANumberOfTimes:(int)numberOfTimes {
-    for (int bark = 1; bark <= numberOfTimes;bark++ ) {
-        [self bark];
+- (void) barkANumberOfTimes:(int)numberOfTimes loudly:(BOOL)barkedLoudly
+{
+    if (barkedLoudly == FALSE) {
+        for (int bark = 1; bark <= numberOfTimes;bark++ ) {
+            NSLog(@"Yip yip");
+        }
+    } else {
+        NSLog(@"BARK BARK BARK!");
     }
-}
 
-- (void) changeColor {
+
+}
+- (void) changeColor
+{
     self.color = @"black";
 }
 

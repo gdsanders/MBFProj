@@ -24,8 +24,8 @@
     myDog.age = 5;
     myDog.color = @"yellow";
     myDog.breed = @"Labrador Retriever";
-    [myDog barkANumberOfTimes:8];
-    NSLog(@"%@", myDog.color);
+    [myDog barkANumberOfTimes:5 loudly:YES];
+     NSLog(@"%@", myDog.color);
     [myDog changeColor];
     NSLog(@"%@", myDog.color);
 }

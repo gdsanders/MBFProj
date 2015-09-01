@@ -19,7 +19,7 @@
 @property (nonatomic, strong) NSString *color;
 
 - (void) bark;
-- (void) barkANumberOfTimes:(int)numberOfTimes;
+- (void) barkANumberOfTimes:(int)numberOfTimes loudly:(BOOL) barkedLoudly;
 - (void) changeColor;
 
 

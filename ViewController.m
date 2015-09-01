@@ -24,8 +24,7 @@
     myDog.age = 5;
     myDog.color = @"yellow";
     myDog.breed = @"Labrador Retriever";
-    [myDog bark];
-        
+    [myDog barkANumberOfTimes:8];
 }
 
 - (void)didReceiveMemoryWarning {

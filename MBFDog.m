@@ -21,4 +21,8 @@
     }
 }
 
+- (void) changeColor {
+    self.color = @"black";
+}
+
 @end

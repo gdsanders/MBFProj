@@ -21,6 +21,7 @@
 - (void) bark;
 - (void) barkANumberOfTimes:(int)numberOfTimes loudly:(BOOL) barkedLoudly;
 - (void) changeColor;
+- (int) ageInDogYearsFromAge: (int)originalAge;
 
 
 

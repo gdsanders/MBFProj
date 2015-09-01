@@ -28,6 +28,8 @@
      NSLog(@"%@", myDog.color);
     [myDog changeColor];
     NSLog(@"%@", myDog.color);
+    int DogYears = [myDog ageInDogYearsFromAge:myDog.age];
+    NSLog(@"%i", DogYears);
 }
 
 - (void)didReceiveMemoryWarning {

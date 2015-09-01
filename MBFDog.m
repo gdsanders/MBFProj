@@ -32,4 +32,10 @@
     self.color = @"black";
 }
 
+- (int) ageInDogYearsFromAge: (int)originalAge
+{
+    int newAge = originalAge * 7;
+    return newAge;
+}
+
 @end

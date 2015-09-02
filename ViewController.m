@@ -21,14 +21,13 @@
     // Do any additional setup after loading the view, typically from a nib.
     MBFDog *myDog = [[MBFDog alloc] init];
     myDog.name = @"Hoss";
-    myDog.age = 7;
+    myDog.image = [UIImage imageNamed:@"Hoss.jpg"];
     myDog.color = @"yellow";
     myDog.breed = @"Labrador Retriever";
-    [myDog barkANumberOfTimes:5 loudly:NO];
-     NSLog(@"%@", myDog.color);
-    [myDog changeColor];
-    NSLog(@"%@", myDog.color);
-    NSLog(@"%i", [myDog ageInDogYearsFromAge:myDog.age]);
+        
+    self.myimageView.image = myDog.image;
+    self.nameLabel.text = myDog.name;
+    self.breedLabel.text = myDog.breed;
 }
 
 - (void)didReceiveMemoryWarning {

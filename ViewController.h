@@ -16,6 +16,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *breedLabel;
 
+@property (strong, nonatomic) NSMutableArray *myDogs;
+
 
 @end
 

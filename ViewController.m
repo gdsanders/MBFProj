@@ -45,6 +45,13 @@
     fourthDog.breed = @"Greyhound";
     fourthDog.image = [UIImage imageNamed:@"ItalianGreyhound.jpg"];
     
+    self.myDogs = [[NSMutableArray alloc] init];
+    [self.myDogs addObject:myDog];
+    [self.myDogs addObject:secondDog];
+    [self.myDogs addObject:thirdDog];
+    [self.myDogs addObject:fourthDog];
+    NSLog(@"%@", self.myDogs);
+    
     
 }
 

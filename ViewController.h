@@ -18,6 +18,7 @@
 
 @property (strong, nonatomic) NSMutableArray *myDogs;
 
+- (IBAction)newDogBarButtonPressed:(UIBarButtonItem *)sender;
 
 @end
 

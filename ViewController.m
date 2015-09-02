@@ -60,4 +60,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)newDogBarButtonPressed:(UIBarButtonItem *)sender {
+    int numberOfDogs = [self.myDogs count];
+}
 @end

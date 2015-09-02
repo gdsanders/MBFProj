@@ -51,6 +51,7 @@
     [self.myDogs addObject:thirdDog];
     [self.myDogs addObject:fourthDog];
     NSLog(@"%@", self.myDogs);
+    self.currentIndex = 0;
     
     
 }
@@ -61,12 +62,20 @@
 }
 
 - (IBAction)newDogBarButtonPressed:(UIBarButtonItem *)sender {
+    
+    
     int numberOfDogs = [self.myDogs count];
     int randomDog = arc4random() % numberOfDogs;
+    
     MBFDog *randomMutt = [self.myDogs objectAtIndex:randomDog];
     
-    self.myimageView.image = randomMutt.image;
-    self.nameLabel.text = randomMutt.name;
-    self.breedLabel.text = randomMutt.breed;
+    [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+        self.myimageView.image = randomMutt.image;
+        self.nameLabel.text = randomMutt.name;
+        self.breedLabel.text = randomMutt.breed;
+    } completion:^(BOOL finished) {
+        
+    }];
+    sender.title = @"And another...";
 }
 @end

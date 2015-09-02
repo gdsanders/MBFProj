@@ -62,5 +62,11 @@
 
 - (IBAction)newDogBarButtonPressed:(UIBarButtonItem *)sender {
     int numberOfDogs = [self.myDogs count];
+    int randomDog = arc4random() % numberOfDogs;
+    MBFDog *randomMutt = [self.myDogs objectAtIndex:randomDog];
+    
+    self.myimageView.image = randomMutt.image;
+    self.nameLabel.text = randomMutt.name;
+    self.breedLabel.text = randomMutt.breed;
 }
 @end

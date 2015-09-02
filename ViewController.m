@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
     MBFDog *myDog = [[MBFDog alloc] init];
     myDog.name = @"Hoss";
     myDog.image = [UIImage imageNamed:@"Hoss.jpg"];
@@ -28,6 +29,20 @@
     self.myimageView.image = myDog.image;
     self.nameLabel.text = myDog.name;
     self.breedLabel.text = myDog.breed;
+    
+    MBFDog *secondDog = [[MBFDog alloc] init];
+    secondDog.name = @"Bones";
+    secondDog.breed = @"Jack Russell Terrier";
+    secondDog.image = [UIImage imageNamed:@"JRT.jpg"];
+    
+    MBFDog *thirdDog = [[MBFDog alloc] init];
+    thirdDog.name = @"Barnabus";
+    thirdDog.breed = @"Collie";
+    thirdDog.image = [UIImage imageNamed:@"BorderCollie.jpg"];
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {

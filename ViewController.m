@@ -40,7 +40,10 @@
     thirdDog.breed = @"Collie";
     thirdDog.image = [UIImage imageNamed:@"BorderCollie.jpg"];
     
-    
+    MBFDog *fourthDog = [[MBFDog alloc] init];
+    fourthDog.name = @"Weirdo";
+    fourthDog.breed = @"Greyhound";
+    fourthDog.image = [UIImage imageNamed:@"ItalianGreyhound.jpg"];
     
     
 }

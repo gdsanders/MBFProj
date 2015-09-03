@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "MBFDog.h"
+#import "MBFPuppy.h"
 
 
 @interface ViewController ()
@@ -52,6 +53,9 @@
     [self.myDogs addObject:fourthDog];
     NSLog(@"%@", self.myDogs);
     self.currentIndex = 0;
+    
+    MBFPuppy *myPuppy = [[MBFPuppy alloc] init];
+    
     
     
 }

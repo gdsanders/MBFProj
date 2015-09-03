@@ -17,6 +17,7 @@
 
 -(void)bark
 {
+    [super bark];
     NSLog(@"yip yip yip");
     [self givePuppyEyes];
 }

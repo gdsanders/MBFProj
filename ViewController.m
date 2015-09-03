@@ -55,7 +55,7 @@
     self.currentIndex = 0;
     
     MBFPuppy *myPuppy = [[MBFPuppy alloc] init];
-    
+    [myPuppy givePuppyEyes];
     
     
 }
@@ -82,7 +82,7 @@
     
     MBFDog *randomMutt = [self.myDogs objectAtIndex:randomDog];
     
-    [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
+    [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
         self.myimageView.image = randomMutt.image;
         self.nameLabel.text = randomMutt.name;
         self.breedLabel.text = randomMutt.breed;

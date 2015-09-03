@@ -51,11 +51,16 @@
     [self.myDogs addObject:secondDog];
     [self.myDogs addObject:thirdDog];
     [self.myDogs addObject:fourthDog];
-    NSLog(@"%@", self.myDogs);
     self.currentIndex = 0;
     
     MBFPuppy *myPuppy = [[MBFPuppy alloc] init];
     [myPuppy givePuppyEyes];
+    myPuppy.name = @"Pilgrim";
+    myPuppy.breed = @"Portuguese Water Dog";
+    myPuppy.image = [UIImage imageNamed:@"Bo.jpg"];
+    
+    [self.myDogs addObject:myPuppy];
+    
     
     
 }

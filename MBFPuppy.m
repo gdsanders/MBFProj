@@ -12,7 +12,13 @@
 
 -(void)givePuppyEyes
 {
-    NSLog(@":(");
+    NSLog(@":------------------------>");
+}
+
+-(void)bark
+{
+    NSLog(@"yip yip yip");
+    [self givePuppyEyes];
 }
 
 @end

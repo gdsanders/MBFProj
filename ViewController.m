@@ -67,6 +67,15 @@
     int numberOfDogs = [self.myDogs count];
     int randomDog = arc4random() % numberOfDogs;
     
+    if (self.currentIndex == randomDog && self.currentIndex == 0)  {
+        randomDog ++;
+    }
+    
+    else if (self.currentIndex == randomDog) {
+        randomDog --;
+    }
+    self.currentIndex = randomDog;
+    
     MBFDog *randomMutt = [self.myDogs objectAtIndex:randomDog];
     
     [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{

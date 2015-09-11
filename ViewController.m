@@ -73,7 +73,7 @@
 - (IBAction)newDogBarButtonPressed:(UIBarButtonItem *)sender {
     
     
-    int numberOfDogs = [self.myDogs count];
+    NSInteger numberOfDogs = [self.myDogs count];
     int randomDog = arc4random() % numberOfDogs;
     
     if (self.currentIndex == randomDog && self.currentIndex == 0)  {
@@ -87,7 +87,7 @@
     
     MBFDog *randomMutt = [self.myDogs objectAtIndex:randomDog];
     
-    [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
+    [UIView transitionWithView:self.view duration:0.5 options:UIViewAnimationOptionTransitionCrossDissolve animations:^{
         self.myimageView.image = randomMutt.image;
         self.nameLabel.text = randomMutt.name;
         self.breedLabel.text = randomMutt.breed;
